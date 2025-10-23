@@ -1,0 +1,157 @@
+@layout.main({
+  title: 'Home | Scent Amoura Official Website',
+  showFooter: true
+})
+
+  @slot('meta')
+    <meta
+      name="description"
+      content="Welcome to Scent Amoura — the official luxury perfume store. Explore our elegant fragrance collection crafted to inspire timeless sophistication."
+    />
+    <meta
+      name="keywords"
+      content="Scent Amoura, luxury perfume, fragrance collection, eau de parfum, perfume store"
+    />
+    <meta name="author" content="Scent Amoura" />
+  @endslot
+  
+  @slot('style')
+    <link rel="stylesheet" href="/CSS/home-page.css" />
+  @endslot
+    
+  @slot('content')
+    <!-- Hero Section Start -->
+    <section id="home" class="container hero">
+      <div class="content">
+        <h1>
+          LUXURY <br />PERFUME
+        </h1>
+        <p>
+          Step into a world of elegance with our signature <br />
+          collection of luxury perfumes.
+        </p>
+      </div>
+      <div class="content-btn">
+        <a href="/shop" class="btn btn-primary">SHOP NOW</a>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Collection Section Start -->
+    <section class="container collection">
+      <h1>
+        Our Collection
+      </h1>
+      <div class="container-wrap">
+        <div class="box-wrap">
+          <div class="box-image">
+            <img src="/Asset/EDC 2-Fixed.png" alt="EDC" />
+          </div>
+          <h2>
+            Eau de Cologne
+          </h2>
+        </div>
+        <div class="box-wrap">
+          <div class="box-image">
+            <img src="/Asset/EDT-Fixed.png" alt="EDT" />
+          </div>
+          <h2>
+            Eau de Toilette
+          </h2>
+        </div>
+        <div class="box-wrap">
+          <div class="box-image">
+            <img src="/Asset/EDP-Fixed.png" alt="EDP" />
+          </div>
+          <h2>
+            Eau de Parfum
+          </h2>
+        </div>
+        <div class="box-wrap">
+          <div class="box-image">
+            <img src="/Asset/Extrait-Fixed.png" alt="Extrait" />
+          </div>
+          <h2>
+            Extrait de Parfum
+          </h2>
+        </div>
+      </div>
+    </section>
+    <!-- Collection Section End -->
+
+    <!-- About Section Start -->
+    <section class="container about-us">
+      <div class="content">
+        <h1>
+          High quality is the <br />only core for us
+        </h1>
+        <p>
+          Every fragrance that we create is crafted with precision, only using
+        the finest ingredients to ensure unmatched elegance, longevity, and
+        sophistication. For us, quality isn't just a standard — it's a promise.
+        </p>
+        <div class="content-btn">
+          <a href="/about" class="btn btn-secondary">LEARN MORE</a>
+        </div>
+      </div>
+      <div class="content-img">
+        <img src="/Asset/AboutUs-HomePage.png" alt="Perfume" />
+      </div>
+    </section>
+    <!-- About Section End -->
+
+    <!-- Recommendation Section Start -->
+    <section class="container recommendation">
+      <div class="recom-wrap">
+        <div class="content">
+          <h1>
+            Recommendation
+          </h1>
+          <p>
+            Discover our handpicked scents, thoughtfully curated just for you.
+          Each fragrance blends timeless elegance with a touch of modern
+          sophistication.
+          </p>
+          <div class="content-btn">
+            <a href="/shop" class="btn btn-secondary">SEE MORE</a>
+          </div>
+        </div>
+        <div class="product-wrap">
+          <div class="box-wrap">
+            <a href="#" class="linked">
+              <div class="box-image">
+                <img src="/Asset/EDT-Fixed.png" alt="Blue de Chanel" />
+              </div>
+              <h2>
+                Blue de Amoura
+              </h2>
+              <p>
+                IDR 650.000,00
+              </p>
+            </a>
+          </div>
+          <div class="box-wrap">
+            <a href="#" class="linked">
+              <div class="box-image">
+                <img src="/Asset/EDP-Fixed.png" alt="Creed Aventus" />
+              </div>
+              <h2>
+                Amoura Valor
+              </h2>
+              <p>
+                IDR 470.000,00
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Recommendation Section End -->
+
+    <!-- Footer Page Start-->
+    @if(showFooter)
+      @include('partials/footer')
+    @endif
+    <!-- Footer Page End-->
+  @endslot
+@end

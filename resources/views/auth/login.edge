@@ -1,0 +1,82 @@
+@layout.main({
+  title: 'Login | Official Scent Amoura Website',
+  showFooter: false
+})
+
+  @slot('meta')
+    <meta
+      name="description"
+      content="Sign in to your Scent Amoura account to explore our luxury perfume collection, view your orders, and enjoy exclusive member offers."
+    />
+    <meta
+      name="keywords"
+      content="Scent Amoura login, luxury perfume, perfume store, user account, sign in"
+    />
+    <meta name="author" content="Scent Amoura" />
+  @endslot
+  
+  @slot('style')
+    <link rel="stylesheet" href="/CSS/login-page.css" />
+  @endslot
+  
+  @slot('content')
+    <section class="login-wrapper">
+      <!-- Left Page Start -->
+      <section class="container login-left">
+        <a href="/shop" class="back-nav">
+          <i class="bi bi-arrow-left"></i>
+          <h2>
+            Back to Shop
+          </h2>
+        </a>
+        <div class="headline-form">
+          <h1>
+            Sign In your Account
+          </h1>
+          <p>
+            Sign in to continue shopping your favorite scents.
+          </p>
+        </div>
+
+        <form class="form" action="{{ route('auth.login.post') }}" method="POST">
+          {{ csrfField() }}
+          <div class="input-group">
+            <input type="email" id="email" name="email" placeholder="Email" />
+          </div>
+
+          <div class="input-group">
+            <input type="password" id="password" name="password" placeholder="Password" />
+          </div>
+
+          <button type="submit" class="btn btn-primary">Sign In</button>
+
+          <button class="btn-social">
+            <i class="bi bi-google"></i>Sign in with Google
+          </button>
+
+          <p class="login-link">
+            You don't have an account? <a href="/signup">Sign Up</a>
+          </p>
+        </form>
+      </section>
+      <!-- Left Page End -->
+
+      <!-- Right Page Start -->
+      <section class="container login-right">
+        <div class="login-image-wrapper">
+          <img src="/Asset/Photo-Model-Logo.png" alt="Model fragrance image" class="login-image" />
+          <div class="login-quote">
+            <p class="quote-text">
+              “Scent Amoura is more than fragrance, it's elegance redefined. Discover the essence of your identity in every scent.”
+            </p>
+            <p class="quote-author">
+              <strong>Adrien Lefevre</strong>              <br />
+              Scent Amoura Model
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Right Page End -->
+    </section>
+  @endslot
+@end

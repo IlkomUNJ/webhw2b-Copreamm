@@ -1,0 +1,397 @@
+/* General Design */
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: var(--secondary);
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  font-family: 'Sansation', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+/* Hero Design */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../Asset/Background-AboutPage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  max-width: 90rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.hero .content {
+  padding-top: 2rem;
+  box-sizing: border-box;
+}
+
+/* Reason Design */
+.line {
+  width: 100%;
+  max-width: 95rem;
+  margin: 0 auto;
+  border-top: var(--primary) solid 0.1rem;
+  border-bottom: var(--primary) solid 0.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.reason {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 4rem 0;
+  box-sizing: border-box;
+}
+
+.reason-box {
+  position: relative;
+  flex: 1;
+  padding: 0 2rem;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.reason-box:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 50%;
+  background-color: var(--secondary);
+  opacity: 0.5;
+}
+
+.reason-box i {
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.reason-box h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: var(--primary);
+}
+
+.reason-box p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* Banner Page Design */
+.banner {
+  display: flex;
+  padding-top: 6rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.banner-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  border: var(--secondary) solid 0.2rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-sizing: border-box;
+}
+
+.content-img {
+  max-width: 37rem;
+  box-sizing: border-box;
+}
+
+.content {
+  padding: 2.5rem;
+  box-sizing: border-box;
+}
+
+.content h1 {
+  font-size: 4.7rem;
+}
+
+.content p {
+  font-size: 1.6rem;
+  margin-top: 3rem;
+}
+
+/* Benefits Page Design */
+.perks-benefits {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding: 7rem 0;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.perks-benefits h1 {
+  font-size: 3rem;
+}
+
+.benefit-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  box-sizing: border-box;
+}
+
+.box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.5rem;
+  padding: 4rem 2rem;
+  border: var(--secondary) solid 0.05rem;
+  border-radius: 0.2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-sizing: border-box;
+}
+
+.box-wrap i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.4rem;
+  color: var(--primary);
+  border: var(--primary) solid 0.1rem;
+  border-radius: 50%;
+  box-sizing: border-box;
+}
+
+.box-wrap h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--primary);
+  padding-top: 1rem;
+}
+
+.box-wrap p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* Small Laptop */
+@media (max-width: 1200px) {
+  .hero {
+    min-height: 45vh;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 3.8rem;
+  }
+
+  .reason {
+    gap: 1rem;
+  }
+
+  .banner-box {
+    gap: 1.5rem;
+  }
+
+  .content-img {
+    max-width: 33rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 4rem 1.5rem;
+  }
+
+  .content h1 {
+    font-size: 3.2rem;
+  }
+
+  .content p {
+    font-size: 1.4rem;
+  }
+
+  .reason {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .reason-box {
+    padding: 1rem 0;
+  }
+
+  .reason-box:not(:last-child)::after {
+    display: none;
+  }
+
+  .banner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .banner-box {
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .content-img {
+    max-width: 30rem;
+  }
+
+  .benefit-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .box-wrap {
+    width: 45%;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .hero {
+    padding: 3rem 1rem;
+  }
+
+  .content h1 {
+    font-size: 2.8rem;
+  }
+
+  .content p {
+    font-size: 1.3rem;
+  }
+
+  .banner-box {
+    gap: 1rem;
+  }
+
+  .content-img {
+    max-width: 100%;
+  }
+
+  .perks-benefits {
+    padding: 5rem 1rem;
+  }
+
+  .benefit-wrap {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .box-wrap {
+    width: 100%;
+    padding: 3rem 1.5rem;
+  }
+
+  .box-wrap h2 {
+    font-size: 1.7rem;
+  }
+
+  .box-wrap p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .hero {
+    min-height: 40vh;
+    text-align: center;
+    padding: 2.5rem 1rem;
+  }
+
+  .content h1 {
+    font-size: 2.3rem;
+  }
+
+  .content p {
+    font-size: 1.1rem;
+  }
+
+  .reason {
+    padding: 2rem 0;
+  }
+
+  .reason-box i {
+    font-size: 2rem;
+  }
+
+  .reason-box h2 {
+    font-size: 1.6rem;
+  }
+
+  .banner-box {
+    padding: 1.5rem;
+  }
+
+  .perks-benefits h1 {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .box-wrap {
+    padding: 2.5rem 1rem;
+  }
+
+  .box-wrap h2 {
+    font-size: 1.5rem;
+  }
+
+  .box-wrap p {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,109 @@
+@layout.main({
+  title: 'Contact Us | Scent Amoura Official Website',
+  showFooter: true
+})
+
+  @slot('meta')
+    <meta
+      name="description"
+      content="Get in touch with Scent Amoura for inquiries, fragrance recommendations, or partnership opportunities. We’re here to help you discover the perfect scent."
+    />
+    <meta
+      name="keywords"
+      content="Scent Amoura contact, perfume store contact, fragrance inquiries, customer service, perfume support"
+    />
+    <meta name="author" content="Scent Amoura" />
+  @endslot
+  
+  @slot('style')
+    <link rel="stylesheet" href="/CSS/contact-page.css" />
+  @endslot
+  
+  @slot('content')
+    <main>
+      <!-- Hero Page Start -->
+      <section id="about-us" class="hero">
+        <div class="content">
+          <h1>
+            CONTACT
+          </h1>
+        </div>
+      </section>
+      <!-- Hero Page End -->
+
+      <!-- Contact Page Start -->
+      <section class="container contact">
+        <div class="contact-wrap">
+          <div class="box-wrap">
+            <i class="bi bi-envelope"></i>
+            <h2>
+              Email Address
+            </h2>
+            <p>
+              info
+              @scentamoura.com
+              <br />
+              support
+              @scentamoura.com
+            </p>
+          </div>
+          <div class="box-wrap">
+            <i class="bi bi-telephone"></i>
+            <h2>
+              Phone Number
+            </h2>
+            <p>
+              021 5678 1234 <br />
+              +62 811 2233 4455
+            </p>
+          </div>
+          <div class="box-wrap">
+            <i class="bi bi-geo-alt"></i>
+            <h2>
+              Location
+            </h2>
+            <p>
+              Scent Amoura Headquarters, Jl. Sudirman Kav. 58, Jakarta Pusat
+              10210, Indonesia
+            </p>
+          </div>
+          <div class="box-wrap">
+            <i class="bi bi-clock-history"></i>
+            <h2>
+              Work Day
+            </h2>
+            <p>
+              Monday – Friday : 09.00 – 18.00 WIB <br />Saturday : 10.00 – 15.00
+              WIB <br />
+              Sunday & Public Holidays : Closed
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact Page Start -->
+
+      <!-- Banner Page Start-->
+      <section class="container banner">
+        <div class="banner-box">
+          <h2>
+            Discover Your Scent Now!
+          </h2>
+          <p>
+            Find the fragrance that defines your identity <br />and leaves a
+            timeless impression.
+          </p>
+          <div class="btn-wrap">
+            <a href="#" class="btn btn-secondary">CONTACT US</a>
+          </div>
+        </div>
+      </section>
+      <!-- Banner Page End-->
+
+      <!-- Footer Page Start-->
+      @if(showFooter)
+        @include('partials/footer')
+      @endif
+      <!-- Footer Page End-->
+    </main>
+  @endslot
+@end

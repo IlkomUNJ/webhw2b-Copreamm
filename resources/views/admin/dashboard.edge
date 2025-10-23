@@ -1,0 +1,65 @@
+@layout.main({
+  title: 'About Us | Scent Amoura Official Website',
+  showFooter: false
+})
+
+  @slot('meta')
+    <meta
+      name="description"
+      content="Discover the story behind Scent Amoura — a luxury fragrance brand dedicated to crafting timeless perfumes that embody elegance, confidence, and allure."
+    />
+    <meta
+      name="keywords"
+      content="about Scent Amoura, luxury perfume brand, perfume craftsmanship, fragrance story, elegant scents"
+    />
+    <meta name="author" content="Scent Amoura" />
+  @endslot
+  
+  @slot('style')
+    <link rel="stylesheet" href="/CSS/about-us-page.css" />
+  @endslot
+  
+  @slot('content')
+    <section class="admin-dashboard">
+      <div class="dashboard-header">
+        <h1>
+          Welcome to Admin Dashboard
+        </h1>
+        <p>
+          Manage your products, view orders, and much more.
+        </p>
+      </div>
+
+      <div class="dashboard-content">
+        <div class="admin-stats">
+          <div class="stat-item">
+            <h2>
+              Total Orders
+            </h2>
+            <p>
+              120
+            </p>
+          </div>
+          <div class="stat-item">
+            <h2>
+              Total Users
+            </h2>
+            <p>
+              50
+            </p>
+          </div>
+          <div class="stat-item">
+            <h2>
+              Total Revenue
+            </h2>
+            <p>
+              $5000
+            </p>
+          </div>
+        </div>
+
+        <!-- Add more content here as needed -->
+      </div>
+    </section>
+  @endslot
+@end

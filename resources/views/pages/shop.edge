@@ -1,0 +1,211 @@
+@layout.main({
+  title: 'Shop | Official Scent Amoura Store',
+  showFooter: true
+})
+
+  @slot('meta')
+    <meta
+      name="description"
+      content="Discover our exclusive Scent Amoura luxury perfume collection. Shop your favorite fragrances and experience timeless elegance."
+    />
+    <meta
+      name="keywords"
+      content="Scent Amoura shop, luxury perfume, buy perfume online, fragrance collection, eau de parfum"
+    />
+    <meta name="author" content="Scent Amoura" />
+  @endslot
+  
+  @slot('style')
+    <link rel="stylesheet" href="/CSS/shop-page.css" />
+  @endslot
+  
+  @slot('content')
+    <main>
+      <!-- Hero Page Start -->
+      <section id="shop" class="hero">
+        <div class="content">
+          <h1>
+            DEFINE YOUR <br />
+            SIGNATURE
+          </h1>
+          <p>
+            Elevate your presence with fragrances crafted for those<br />
+            who appreciate elegance.
+          </p>
+        </div>
+      </section>
+      <!-- Hero Page End -->
+
+      <!-- Shop Page Start-->
+      <section class="container shop-wrap">
+        <hr />
+        <div class="up-bar">
+          <h1>
+            CATALOG
+          </h1>
+          <form class="search-form" role="search">
+            <div class="search">
+              <i class="bi bi-search"></i>
+              <input
+                type="search"
+                id="search-input"
+                class="btn btn-secondary search-input-area"
+                placeholder="SEARCH YOUR TASTE"
+              />
+            </div>
+            <button type="submit" class="btn btn-primary search-button">SEARCH</button>
+          </form>
+        </div>
+
+        <!-- Product Page -->
+        <div class="shop-bar" id="product-list">
+          <div class="box-wrap">
+            <a href="#" class="hover-container">
+              <div class="box-image">
+                <img src="./Asset/EDT-Fixed.png" alt="EDT" />
+              </div>
+              <h2>
+                Blue de Amoura
+              </h2>
+              <p>
+                IDR 650.000,00
+              </p>
+            </a>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-secondary add-to-cart">ADD TO CART</a>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+              <a href="#" class="btn btn-secondary add-to-wishlist">
+                <i class="bi bi-heart-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box-wrap">
+            <a href="#" class="hover-container">
+              <div class="box-image">
+                <img src="./Asset/EDP-Fixed.png" alt="EDP" />
+              </div>
+              <h2>
+                Amoura Valor
+              </h2>
+              <p>
+                IDR 800.000,00
+              </p>
+            </a>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-secondary add-to-cart">ADD TO CART</a>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+              <a href="#" class="btn btn-secondary add-to-wishlist">
+                <i class="bi bi-heart-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box-wrap">
+            <a href="#" class="hover-container">
+              <div class="box-image">
+                <img src="./Asset/EDP 3-Fixed.png" alt="EDP" />
+              </div>
+              <h2>
+                Amoura Noir
+              </h2>
+              <p>
+                IDR 750.000,00
+              </p>
+            </a>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-secondary add-to-cart">ADD TO CART</a>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+              <a href="#" class="btn btn-secondary add-to-wishlist">
+                <i class="bi bi-heart-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box-wrap">
+            <a href="#" class="hover-container">
+              <div class="box-image">
+                <img src="./Asset/EDC 2-Fixed.png" alt="EDC" />
+              </div>
+              <h2>
+                Amoura Gimber
+              </h2>
+              <p>
+                IDR 450.000,00
+              </p>
+            </a>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-secondary add-to-cart">ADD TO CART</a>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+              <a href="#" class="btn btn-secondary add-to-wishlist">
+                <i class="bi bi-heart-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box-wrap">
+            <a href="#" class="hover-container">
+              <div class="box-image">
+                <img src="./Asset/Extrait-Fixed.png" alt="Extrait" />
+              </div>
+              <h2>
+                Imperial Essence
+              </h2>
+              <p>
+                IDR 850.000,00
+              </p>
+            </a>
+            <div class="btn-wrap">
+              <a href="#" class="btn btn-secondary add-to-cart">ADD TO CART</a>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+              <a href="#" class="btn btn-secondary add-to-wishlist">
+                <i class="bi bi-heart-fill"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box-wrap">
+            <a href="#" class="hover-container">
+              <div class="box-image">
+                <img src="./Asset/EDP 2-Fixed.png" alt="EDP" />
+              </div>
+              <h2>
+                Noble Gentleman
+              </h2>
+              <p>
+                IDR 600.000,00
+              </p>
+            </a>
+            <div class="btn-wrap">
+              <a href="" class="btn btn-secondary add-to-cart">ADD TO CART</a>
+              <a href="#" class="btn btn-primary">BUY NOW</a>
+              <a href="#" class="btn btn-secondary add-to-wishlist">
+                <i class="bi bi-heart-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Shop Page End-->
+
+      <!-- Banner Page Start-->
+      <section class="container banner">
+        <div class="banner-box">
+          <div class="content-img">
+            <img src="./Asset/Banner-ShopPage.png" alt="Perfume" />
+          </div>
+          <div class="content-banner">
+            <h2>
+              The Art of Luxury Scents
+            </h2>
+            <p>
+              Experience the harmony of sophistication and allure in every note.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Banner Page End-->
+
+      <!-- Footer Page Start-->
+      @if(showFooter)
+        @include('partials/footer')
+      @endif
+      <!-- Footer Page End-->
+    </main>
+  @endslot
+@end

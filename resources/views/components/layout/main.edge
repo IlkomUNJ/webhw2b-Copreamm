@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      {{ title || "Scent Amoura Official Website" }}
+    </title>
+
+    <!-- Meta Tags -->
+    @if ($slots.meta)
+      {{{ await $slots.meta() }}}
+    @endif
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="/Asset/Logo-Style.png" />
+
+    <!-- Fonts Family -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Sansation:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <!-- CSS Global -->
+    <link rel="stylesheet" href="/CSS/global.css" />
+
+    <!-- Slot untuk CSS tambahan per halaman -->
+    @if($slots.style)
+      {{{ await $slots.style() }}}
+    @endif
+  </head>
+
+  <body>
+    <!-- Navbar Start -->
+    @include('partials/header')
+    <!-- Navbar End -->
+
+    <!-- Main Content Start -->
+    <main>
+      {{{ await $slots.content() }}}
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    @if(showFooter)
+      @include('partials/footer')
+    @endif
+    <!-- Footer End -->
+
+    <!-- Script Start -->
+    <script src="/JS/script.js">
+
+    </script>
+    <!-- Script End -->
+  </body>
+</html>

@@ -1,0 +1,310 @@
+/* General Design */
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
+}
+
+h1 {
+  color: var(--secondary);
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  font-family: 'Sansation', sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+
+img {
+  height: auto;
+  display: block;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Hero Design */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50vh;
+  width: 100%;
+  margin: 0 auto;
+  background-image: url(../Asset/Background-ContactPage.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-bottom: var(--primary) solid 0.1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.hero .content {
+  padding-top: 2rem;
+  max-width: 90rem;
+  box-sizing: border-box;
+}
+
+/* Contact Page Design */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 7rem 0;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.content h1 {
+  font-size: 4.7rem;
+  text-align: center;
+}
+
+.contact-wrap {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  box-sizing: border-box;
+}
+
+.box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 4rem 2rem;
+  border: var(--secondary) solid 0.05rem;
+  border-radius: 0.2rem;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-sizing: border-box;
+}
+
+.box-wrap i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.4rem;
+  color: var(--primary);
+  border: var(--primary) solid 0.1rem;
+  border-radius: 0.5;
+}
+
+.box-wrap h2 {
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--primary);
+  padding-top: 1rem;
+}
+
+.box-wrap p {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+/* Banner Page Design */
+.banner {
+  display: flex;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding-bottom: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+.banner-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+  padding: 5rem 2rem;
+  border-radius: 0.5rem;
+  background-color: var(--primary);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.banner-box h2 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.banner-box p {
+  font-size: 2rem;
+}
+
+.btn-wrap {
+  padding-top: 3rem;
+}
+
+.btn {
+  font-family: 'Sansation', sans-serif;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  color: var(--base-white);
+  transition: all 0.5s ease;
+}
+
+.btn-secondary {
+  border-color: var(--base-white);
+}
+
+.btn-secondary:hover {
+  background-color: var(--secondary);
+  color: var(--base-black);
+  border-color: var(--secondary);
+}
+
+/* Small Laptop */
+@media (max-width: 1200px) {
+  .content h1 {
+    font-size: 4rem;
+  }
+
+  .contact-wrap {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+
+  .box-wrap {
+    padding: 3.5rem 1.5rem;
+  }
+
+  .banner-box h2 {
+    font-size: 3.6rem;
+  }
+
+  .banner-box p {
+    font-size: 1.8rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    min-height: 40vh;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 3.5rem;
+  }
+
+  .contact-wrap {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .box-wrap {
+    padding: 3rem 1.5rem;
+  }
+
+  .banner-box {
+    padding: 4rem 1.5rem;
+  }
+
+  .banner-box h2 {
+    font-size: 3.2rem;
+  }
+
+  .banner-box p {
+    font-size: 1.6rem;
+  }
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 3rem;
+  }
+
+  .contact {
+    padding: 5rem 1.5rem;
+  }
+
+  .contact-wrap {
+    grid-template-columns: 1fr;
+  }
+
+  .box-wrap {
+    width: 100%;
+    padding: 2.5rem 1.5rem;
+  }
+
+  .banner-box h2 {
+    font-size: 2.8rem;
+  }
+
+  .banner-box p {
+    font-size: 1.4rem;
+  }
+
+  .btn {
+    font-size: 1.1rem;
+  }
+}
+
+/* Phone */
+@media (max-width: 576px) {
+  .hero {
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2.4rem;
+  }
+
+  .contact {
+    padding: 4rem 1rem;
+  }
+
+  .box-wrap {
+    padding: 2rem 1rem;
+  }
+
+  .box-wrap h2 {
+    font-size: 1.6rem;
+  }
+
+  .box-wrap p {
+    font-size: 1.1rem;
+  }
+
+  .banner-box {
+    padding: 3rem 1rem;
+  }
+
+  .banner-box h2 {
+    font-size: 2.2rem;
+  }
+
+  .banner-box p {
+    font-size: 1.2rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+}

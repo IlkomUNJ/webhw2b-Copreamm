@@ -1,0 +1,148 @@
+@layout.main({
+  title: 'About Us | Scent Amoura Official Website',
+  showFooter: false
+})
+
+  @slot('meta')
+    <meta
+      name="description"
+      content="Discover the story behind Scent Amoura — a luxury fragrance brand dedicated to crafting timeless perfumes that embody elegance, confidence, and allure."
+    />
+    <meta
+      name="keywords"
+      content="about Scent Amoura, luxury perfume brand, perfume craftsmanship, fragrance story, elegant scents"
+    />
+    <meta name="author" content="Scent Amoura" />
+  @endslot
+  
+  @slot('style')
+    <link rel="stylesheet" href="/CSS/cart-page.css" />
+  @endslot
+  
+  @slot('content')
+    <section class="cart-wrapper">
+      <!-- Left Page Start -->
+      <section class="container cart-left">
+        <div class="header">
+          <h2>
+            Shopping Cart
+          </h2>
+          <p>
+            Items
+          </p>
+        </div>
+        <div class="product-item">
+          <div class="product-details">
+            <img src="/Asset/EDP-Fixed.png" alt="Product Image" />
+            <div class="details">
+              <h2>
+                Amoura Valor
+              </h2>
+              <p>
+                Perfume
+              </p>
+              <button class="remove">Remove</button>
+            </div>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <input type="text" value="2" />
+            <button>+</button>
+          </div>
+          <div class="price">
+            <p>
+              IDR 800.000,00
+            </p>
+          </div>
+          <div class="total">
+            <p>
+              IDR 1.600.000,00
+            </p>
+          </div>
+        </div>
+
+        <div class="product-item">
+          <div class="product-details">
+            <img src="/Asset/EDC 2-Fixed.png" alt="Product Image" />
+            <div class="details">
+              <h2>
+                Amoura Gimber
+              </h2>
+              <p>
+                Perfume
+              </p>
+              <button class="remove">Remove</button>
+            </div>
+          </div>
+          <div class="quantity">
+            <button>-</button>
+            <input type="text" value="1" />
+            <button>+</button>
+          </div>
+          <div class="price">
+            <p>
+              IDR 450.000,00
+            </p>
+          </div>
+          <div class="total">
+            <p>
+              IDR 450.000,00
+            </p>
+          </div>
+        </div>
+        <a href="/shop" class="back-nav">
+          <i class="bi bi-arrow-left"></i>
+          <h2>
+            Continue Shopping
+          </h2>
+        </a>
+      </section>
+      <!-- Left Page End -->
+
+      <!-- Right Page Start -->
+      <section class="container cart-right">
+        <div class="order-summary">
+          <h2>
+            Order Summary
+          </h2>
+
+          <div class="item-count">
+            <div class="item-total">
+              <span>Items</span>
+              <span>3</span>
+            </div>
+            <span class="price-total">IDR 2.050.000,00</span>
+          </div>
+
+          <div class="shipping">
+            <label for="shipping">Shipping</label>
+            <select id="shipping">
+              <option value="standard">
+                Standard Delivery - IDR 20.000,00
+              </option>
+              <option value="standard">
+                Same Day Delivery - IDR 50.000,00
+              </option>
+            </select>
+          </div>
+
+          <div class="promo-code">
+            <label for="promo">Promo Code</label>
+            <div class="promo-input">
+              <input type="text" id="promo" placeholder="Enter your code" />
+              <button class="apply-btn">Apply</button>
+            </div>
+          </div>
+
+          <div class="total-cost">
+            <span>Total Cost : </span>
+            <span class="total-amount">IDR 2.070.000,00</span>
+          </div>
+
+          <button class="checkout-btn">Checkout</button>
+        </div>
+      </section>
+      <!-- Right Page End -->
+    </section>
+  @endslot
+@end

@@ -1,0 +1,522 @@
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 500;
+  color: var(--secondary);
+  margin: 0;
+}
+
+p {
+  /* font-family handled by global */
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.content {
+  padding-top: 2rem;
+}
+
+.content-btn {
+  margin-top: 3.5rem; /* sedikit dikurangi agar lebih proporsional */
+}
+
+.content-btn a {
+  padding: 1.3rem 1.9rem;
+  transition:
+    background-color 0.5s ease,
+    color 0.5s ease,
+    transform 0.2s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* Hero Design */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  min-height: 100vh;
+  width: 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+  background-image: url('/Asset/Background-HomePagee.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  gap: 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+
+  min-height: 100vh;
+  scroll-snap-align: center;
+}
+
+.hero .content {
+  max-width: 60rem;
+  padding: 1.9rem 0;
+  flex: 1 1 480px;
+  padding-bottom: 15vh;
+}
+
+.hero .content h1 {
+  font-size: 5.6rem;
+  font-weight: 500;
+  color: var(--secondary);
+  line-height: 1.02;
+}
+
+.hero .content-btn {
+  flex: 0 0 320px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding-right: 2rem;
+  padding-bottom: 15vh;
+}
+
+.hero .content-btn a:hover {
+  background-color: var(--secondary);
+  color: var(--base-black);
+  transform: translateY(-2px);
+}
+
+/* Collection Design */
+.collection {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  margin-top: 4rem;
+
+  flex-direction: column;
+  min-height: 100vh;
+  scroll-snap-align: center;
+}
+
+.collection h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  color: var(--secondary);
+}
+
+.collection h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.collection .container-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  width: 100%;
+  margin-top: 2.5rem;
+  padding: 0;
+}
+
+.collection .box-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 18rem;
+  max-width: 22rem;
+}
+
+.collection .box-image {
+  padding: 0.5rem;
+  border: 1px solid var(--secondary);
+  border-radius: 0.4rem;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.collection .box-image img {
+  max-width: 18rem;
+  height: auto;
+  display: block;
+}
+
+/* About Us Design */
+.about-us {
+  padding: 5rem 2rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  justify-content: space-between;
+  box-sizing: border-box;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  flex-wrap: wrap;
+
+  min-height: 100vh;
+  scroll-snap-align: center;
+}
+
+.about-us .content {
+  flex: 1 1 40rem;
+}
+
+.about-us .content-img {
+  flex: 0 0 35rem;
+}
+
+.about-us .content-img img {
+  max-width: 35rem;
+  height: auto;
+}
+
+.about-us .content-btn a {
+  transition: background-color 0.4s ease;
+}
+
+.about-us .content-btn a:hover {
+  background-color: var(--primary);
+  color: var(--base-black);
+}
+
+/* Recommendation Design */
+.recommendation {
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 6rem 2rem;
+  width: 100%;
+  box-sizing: border-box;
+
+  min-height: 100vh;
+  scroll-snap-align: center;
+}
+
+.recom-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+  padding: 5rem 3rem;
+  width: 100%;
+  border: 0.2rem solid var(--primary);
+  border-radius: 0.4rem;
+  background: linear-gradient(
+    180deg,
+    rgba(32, 32, 32, 1) 0%,
+    rgba(0, 0, 0, 0.9) 40%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  box-sizing: border-box;
+  flex-wrap: nowrap;
+}
+
+.recom-wrap .content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  flex: 1 1 30%;
+  min-width: 20rem;
+  padding-top: 0;
+}
+
+.recom-wrap p {
+  margin-top: 0.8rem;
+}
+
+.recom-wrap .content-btn {
+  margin-top: 1.5rem;
+}
+
+.recom-wrap .content-btn a:hover {
+  background-color: var(--primary);
+  color: var(--base-black);
+}
+
+.product-wrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1 1 35%;
+  flex-wrap: nowrap;
+}
+
+.product-wrap .box-wrap {
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+.product-wrap .linked {
+  color: var(--base-white);
+  transition: color 0.5s ease;
+  display: block;
+  text-align: center;
+}
+
+.product-wrap .linked:hover {
+  color: var(--primary);
+}
+
+.product-wrap .box-image {
+  border: 0.1rem solid var(--primary);
+  border-radius: 0.2rem;
+  overflow: hidden;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.5rem;
+}
+
+.product-wrap h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-top: 1.2rem;
+  transition: color 0.5s ease;
+}
+
+.product-wrap p {
+  transition: color 0.5s ease;
+}
+
+.product-wrap .box-image img {
+  max-width: 15rem;
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  margin: 0 auto;
+}
+
+.product-wrap .linked:hover img {
+  transform: scale(1.03);
+}
+
+/* Large laptop / small desktop */
+@media (max-width: 1200px) {
+  .hero .content h1 {
+    font-size: 4.5rem;
+  }
+
+  .hero .content {
+    padding-bottom: 10vh;
+  }
+
+  .hero .content-btn {
+    padding-bottom: 10vh;
+  }
+
+  .collection {
+    gap: 1.5rem;
+  }
+
+  .collection .container-wrap {
+    gap: 2rem;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .collection .box-wrap {
+    flex: 1 1 20rem;
+    max-width: 20rem;
+  }
+
+  .product-wrap {
+    flex: 1 1 100%;
+    min-width: 100%;
+    text-align: left;
+  }
+
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .about-us .content {
+    flex: 1 1 100%;
+    max-width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .about-us .content-img {
+    flex: 0 0 auto;
+    max-width: 80%;
+    width: auto;
+  }
+
+  .about-us .content-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .recom-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .recom-wrap .content {
+    text-align: center;
+    flex: 1 1 100%;
+    min-width: 100%;
+  }
+
+  .recom-wrap .content-btn {
+    justify-content: center;
+  }
+
+  .product-wrap {
+    flex: 1 1 100%;
+    min-width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+/* Tablet */
+@media (max-width: 992px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    padding: 5rem 2rem;
+    justify-content: center;
+  }
+
+  .hero .content {
+    max-width: 100%;
+    text-align: center;
+    padding-top: 20vh;
+  }
+
+  .hero .content h1 {
+    font-size: 3.8rem;
+    margin: 0 auto;
+  }
+
+  .hero .content-btn {
+    padding-right: 0;
+    justify-content: center;
+    align-self: center;
+    padding-bottom: 60vh;
+  }
+
+  .collection .container-wrap {
+    justify-content: center;
+  }
+
+  .product-wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recom-wrap {
+    padding: 2rem;
+  }
+}
+
+/* Small tablet / large phone */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 3rem 1.5rem;
+  }
+
+  .hero .content h1 {
+    font-size: 3.2rem;
+  }
+
+  .collection .box-image img {
+    max-width: 14rem;
+  }
+
+  .product-wrap .box-image img {
+    max-width: 12rem;
+  }
+
+  .recom-wrap {
+    padding: 1.5rem;
+  }
+
+  .collection .container-wrap {
+    gap: 1rem;
+  }
+}
+
+/* Phone */
+@media (max-width: 576px) {
+  h1 {
+    font-size: 2.4rem;
+  }
+
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero .content h1 {
+    font-size: 5rem;
+  }
+
+  .hero .content p {
+    font-size: 1.5rem;
+  }
+
+  .hero .content {
+    padding-top: 25vh;
+  }
+
+  .content-btn {
+    margin-top: 2.5rem;
+  }
+
+  .content-btn a {
+    padding: 1rem 1.5rem;
+    font-size: 1.1rem;
+  }
+
+  .collection .box-image img,
+  .product-wrap .box-image img {
+    max-width: 100%;
+  }
+
+  .recom-wrap {
+    padding: 1rem;
+  }
+
+  .product-wrap .box-wrap {
+    flex: 1 1 48%;
+    max-width: 48%;
+  }
+}

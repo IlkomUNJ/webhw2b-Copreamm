@@ -1,0 +1,69 @@
+<!-- Navbar Start -->
+<header>
+  <!-- Navbar Main -->
+  @if(request.matchesRoute(['home', 'about', 'contact']))
+    <div class="container-navbar">
+      <h2 class="logo">
+        <a href="/shop">SCENT AMOURA</a>
+      </h2>
+      <nav>
+        <ul class="navbar-list">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/shop">Shop</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+        <div class="menu-icon">
+          <i class="bi bi-list"></i>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Navbar Shop -->
+  @elseif(request.matchesRoute('shop'))
+    <div class="container-navbar">
+      <h2 class="logo">
+        <a href="/shop">SCENT AMOURA</a>
+      </h2>
+      <nav>
+        <ul class="navbar-list">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/shop">Shop</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+        <div class="icon-list">
+          <a href="/login">            <i class="bi bi-person-circle"></i></a>
+          <a href="/cart" class="cart-icon">
+            <i class="bi bi-basket2-fill"></i>
+            <span class="cart-count" id="cart-count">3</span>
+          </a>
+          <a href="/wishlist" class="wishlist-icon">
+            <i class="bi bi-heart-fill"></i>
+            <span class="wishlist-count" id="wislist-count">1</span>
+          </a>
+          <div class="menu-icon">
+            <i class="bi bi-list"></i>
+          </div>
+        </div>
+      </nav>
+    </div>
+  @endif
+</header>
+<!-- Navbar End -->

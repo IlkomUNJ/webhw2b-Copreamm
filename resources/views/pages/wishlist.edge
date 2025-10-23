@@ -1,0 +1,76 @@
+@layout.main({
+  title: 'wishlist | Official Scent Amoura Website',
+  showFooter: false
+})
+
+  @slot('meta')
+    <meta
+      name="description"
+      content="Sign in to your Scent Amoura account to explore our luxury perfume collection, view your orders, and enjoy exclusive member offers."
+    />
+    <meta
+      name="keywords"
+      content="Scent Amoura login, luxury perfume, perfume store, user account, sign in"
+    />
+    <meta name="author" content="Scent Amoura" />
+  @endslot
+  
+  @slot('style')
+    <link rel="stylesheet" href="/CSS/wishlist-page.css" />
+  @endslot
+  
+  @slot('content')
+    <section class="wishlist-container">
+      <div class="wishlist-header">
+        <a href="/shop" class="back-nav">
+          <i class="bi bi-arrow-left"></i>
+          <h2>
+            Back to Shop
+          </h2>
+        </a>
+        <div h2>
+          My Wishlist (16 items)
+        </h2>
+      </div>
+
+      <!-- Product 1 (Example) -->
+      <div class="wishlist-item">
+        <!-- Product Image -->
+        <div class="product-image">
+          <img src="https://via.placeholder.com/150" alt="Product Image" />
+        </div>
+
+        <!-- Product Information -->
+        <div class="product-info">
+          <div class="product-name">
+            <h3>
+              JBL FLIP 3 Portable Bluetooth Mobile/Tablet Speaker (SQUAD, 2.0 Channel)
+            </h3>
+          </div>
+
+          <div class="product-status">
+            <span class="status in-stock">In Stock</span>
+          </div>
+
+          <div class="product-rating">
+            <span class="rating">4.0</span>
+            <span class="reviews">(21 reviews)</span>
+          </div>
+
+          <div class="product-price">
+            <span class="price">₹9,975</span>
+            <span class="original-price">₹11,999</span>
+            <span class="discount">16% off</span>
+          </div>
+
+          <div class="product-actions">
+            <!-- Button: Add to Cart -->
+            <button class="add-to-cart">Add to Cart</button>
+            <!-- Button: Explore Similar for Out of Stock -->
+            <button class="explore-similar">Explore Similar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  @endslot
+@end

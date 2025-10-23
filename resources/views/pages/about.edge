@@ -1,0 +1,149 @@
+@layout.main({
+  title: 'About Us | Scent Amoura Official Website',
+  showFooter: true
+})
+
+  @slot('meta')
+    <meta
+      name="description"
+      content="Discover the story behind Scent Amoura — a luxury fragrance brand dedicated to crafting timeless perfumes that embody elegance, confidence, and allure."
+    />
+    <meta
+      name="keywords"
+      content="about Scent Amoura, luxury perfume brand, perfume craftsmanship, fragrance story, elegant scents"
+    />
+    <meta name="author" content="Scent Amoura" />
+  @endslot
+  
+  @slot('style')
+    <link rel="stylesheet" href="/CSS/about-us-page.css" />
+  @endslot
+  
+  @slot('content')
+    <main>
+      <!-- Hero Page Start -->
+      <section id="about-us" class="hero">
+        <div class="content">
+          <h1>
+            ABOUT US
+          </h1>
+        </div>
+      </section>
+      <!-- Hero Page End -->
+
+      <!-- Strength Page Start -->
+      <section class="line">
+        <div class="container reason">
+          <div class="reason-box">
+            <i class="bi bi-award-fill"></i>
+            <h2>
+              Premium Ingredients
+            </h2>
+            <p>
+              Crafted from the finest natural essences, ensuring a long-lasting
+              scent that radiates pure elegance.
+            </p>
+          </div>
+          <div class="reason-box">
+            <i class="bi bi-star-fill"></i>
+            <h2>
+              Exclusive Design
+            </h2>
+            <p>
+              Each bottle is meticulously designed with artistic detail,
+              embodying true luxury and prestige.
+            </p>
+          </div>
+          <div class="reason-box">
+            <i class="bi bi-flower3"></i>
+            <h2>
+              Unique Scents
+            </h2>
+            <p>
+              Every collection carries a distinctive character, offering a
+              signature aroma that sets you apart.
+            </p>
+          </div>
+          <div class="reason-box">
+            <i class="bi bi-gem"></i>
+            <h2>
+              Luxury Experience
+            </h2>
+            <p>
+              Delivers an emotional journey that reflects a refined and
+              luxurious lifestyle.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Strength Page End -->
+
+      <!-- Banner Page Start -->
+      <section class="container banner">
+        <div class="banner-box">
+          <div class="content">
+            <h1>
+              The Essence of Luxury
+            </h1>
+            <p>
+              For us, fragrance is more than a scent, it is about identity,
+              elegance, and luxury. Crafted from the world’s finest ingredients,
+              each drop lingers in memory and captivates the senses. More than
+              perfume, we offer exclusivity, refinement, and a statement of true
+              sophistication.
+            </p>
+          </div>
+          <div class="content-img">
+            <img src="./Asset/Banner-AboutPage.png" alt="Perfume" />
+          </div>
+        </div>
+      </section>
+      <!-- Banner Page End -->
+
+      <!-- Benefits Page Start -->
+      <section class="container perks-benefits">
+        <h1>
+          Perks and Benefits
+        </h1>
+        <div class="benefit-wrap">
+          <div class="box-wrap">
+            <i class="bi bi-lightning-charge"></i>
+            <h2>
+              Quick Payment
+            </h2>
+            <p>
+              Enjoy a seamless and secure checkout with easy process.
+            </p>
+          </div>
+          <div class="box-wrap">
+            <i class="bi bi-cash-stack"></i>
+            <h2>
+              Affordable Prices
+            </h2>
+            <p>
+              Offer premium fragrances at prices that bring elegance closer to
+              you.
+            </p>
+          </div>
+          <div class="box-wrap">
+            <i class="bi bi-percent"></i>
+            <h2>
+              Big Deals
+            </h2>
+            <p>
+              Unlock exclusive offers that giving you the best value for every
+              purchase.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Benefits Page Start -->
+
+      <!-- Footer Page Start-->
+      @if(showFooter)
+        @include('partials/footer')
+      @endif
+      <!-- Footer Page End-->
+    </main>
+  @endslot
+@end
